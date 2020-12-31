@@ -12,7 +12,6 @@ const Session = () => {
     return (
         <div className='session'>
             <span id='session-label' className='session__label'>Session Length</span>
-            <p id="session-length" className='session__length'>{value}</p>
             <div className="session__controls">
                 <button
                     type='button'
@@ -23,6 +22,7 @@ const Session = () => {
                 >
                     <FontAwesomeIcon icon={faMinus}/>
                 </button>
+                <p id="session-length" className='session__length'>{value}</p>
                 <button
                     type='button'
                     id='session-increment'

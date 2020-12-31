@@ -12,7 +12,6 @@ const Break = () => {
     return (
         <div className='break'>
             <span id='break-label' className='break__label'>Break Length</span>
-            <p id="break-length" className='break__length'>{value}</p>
             <div className="break__controls">
                 <button
                     type='button'
@@ -23,6 +22,7 @@ const Break = () => {
                 >
                     <FontAwesomeIcon icon={faMinus}/>
                 </button>
+                <p id="break-length" className='break__length'>{value}</p>
                 <button
                     type='button'
                     id='break-increment'

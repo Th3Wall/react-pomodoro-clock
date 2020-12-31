@@ -5,11 +5,20 @@
   flex-direction: column
   align-items: center
   justify-content: center
+  min-width: 350px
   background-color: $white
   color: $gradient-stop-1
-  padding: 2.5em 4em
+  padding: 2.5em 2em
   border-radius: 50px
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), -2px 17px 33.4px rgba(0, 0, 0, 0.086), 1px 7px 20px 2px rgba(0, 0, 0, 0.12)
+
+  &__label
+    z-index: 3
+    color: $white
+    font-weight: 500
+    font-size: 20px
+    line-height: 1
+    position: relative
 
   &__time
     margin: 0
@@ -17,9 +26,29 @@
     font-size: 50px
     line-height: 1
     font-weight: 400
+    position: relative
+    z-index: 1
+    color: $white
+
+    &::after
+      content: ''
+      background: linear-gradient(90deg, $gradient-stop-1 0%, $gradient-stop-2 100%)
+      width: 180px
+      height: 180px
+      border-radius: 50%
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      z-index: -1
 
   &__controllers
-      display: flex
-      align-items: center
-      justify-content: space-between
-      width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+
+  &__maintitle
+    margin-top: 0.5em
+    margin-bottom: 1.5em
