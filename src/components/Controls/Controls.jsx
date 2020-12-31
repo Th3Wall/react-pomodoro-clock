@@ -7,7 +7,7 @@ const Controls = () => {
         <div className='controls__wrp'>
             <button type='button' id='start_stop'>
                 <FontAwesomeIcon icon={faPlay} />
-                <FontAwesomeIcon icon={faPause} />
+                <FontAwesomeIcon icon={faPause} style={{display: 'none'}}/>
             </button>
             <button type='button' id='reset'>
                 <FontAwesomeIcon icon={faRedo} />

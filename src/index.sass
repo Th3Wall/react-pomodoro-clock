@@ -19,3 +19,19 @@ button
     background: transparent
     border: 0
     outline: 0
+    padding: 1em 1.1em
+    margin: 0.5em
+    border-radius: 50%
+    background-color: $white
+    color: $gradient-stop-2
+    box-shadow: 0 2.8px 2.2px #f1334508, 0 6.7px 5.3px #f133450c, 0 12.5px 10px #f133450f, 0 22.3px 17.9px #f1334512, -2px 17px 33.4px #00000016, 1px 7px 20px 2px #0000001f
+    transition: all 0.1s ease-in-out
+
+    &:hover
+        cursor: pointer
+        transform: scale(1.1)
+
+    &:disabled
+        opacity: 0.6
+        pointer-events: none
+        box-shadow: none
