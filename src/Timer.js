@@ -4,12 +4,17 @@ import Session from './components/Session/Session'
 import Controls from './components/Controls/Controls'
 
 const Timer = () => {
+
+  const handleReset = (e) => {
+    console.log(e.target)
+  }
+
   return (
     <div className="timer">
       <h2 className='timer__maintitle'>React Pomodoro Timer</h2>
       <h3 id='timer-label' className='timer__label'>Session</h3>
       <h1 id='time-left' className='timer__time'>25:00</h1>
-      <Controls />
+      <Controls onReset={(e) => handleReset(e)} />
       <div className="timer__controllers">
         <Break />
         <Session />
