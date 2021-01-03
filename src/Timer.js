@@ -6,18 +6,26 @@ import { useStateValue } from './stateProvider';
 
 const Timer = () => {
 
-  const handleReset = (e) => {
-    console.log(e.target)
+  const [{projectName, timerLabel, timerValue}] = useStateValue();
+
+  const handleReset = () => {
+    console.log('reset');
   }
 
-  const [{projectName, timerLabel}] = useStateValue();
+  const clockify = () => {
+    let minutes = Math.floor(timerValue / 60);
+    let seconds = timerValue - minutes * 60;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+    return `${minutes}:${seconds}`;
+  }
 
   return (
     <div className="timer">
       <h2 className='timer__maintitle'>{projectName}</h2>
       <h3 id='timer-label' className='timer__label'>{timerLabel}</h3>
-      <h1 id='time-left' className='timer__time'>25:00</h1>
-      <Controls onReset={(e) => handleReset(e)} />
+      <h1 id='time-left' className='timer__time'>{clockify()}</h1>
+      <Controls onReset={handleReset} />
       <div className="timer__controllers">
         <Break />
         <Session />

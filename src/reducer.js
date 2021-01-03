@@ -2,7 +2,9 @@ export const initialState = {
     projectName: 'React Pomodoro Timer',
     timerLabel: 'Session',
     breakValue: 5,
-    sessionValue: 25
+    sessionValue: 25,
+    // timerValue is the initial value of 25 minnutes multiplied by 60 in order to have it in seconds much more easily decreasable by 1
+    timerValue: 1500
 }
 
 export const actionTypes = {
@@ -16,6 +18,8 @@ export const actionTypes = {
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
+        case actionTypes.RESET_TIMERS:
+            return initialState;
         case actionTypes.SET_PROJECTNAME:
             return {
                 ...state,

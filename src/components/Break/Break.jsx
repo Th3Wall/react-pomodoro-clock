@@ -18,7 +18,7 @@ const Break = () => {
                     id='break-decrement'
                     className='break__controls--btn'
                     onClick={handleDecrement}
-                    disabled={value <= 1}
+                    disabled={value <= 0}
                 >
                     <FontAwesomeIcon icon={faMinus}/>
                 </button>
