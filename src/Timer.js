@@ -3,18 +3,22 @@ import Break from './components/Break/Break'
 import Session from './components/Session/Session'
 import Controls from './components/Controls/Controls'
 import { useStateValue } from './stateProvider';
+import { actionTypes } from './reducer';
 
 const Timer = () => {
 
   const [{projectName, timerLabel, timerValue}] = useStateValue();
+  const [state, dispatch] = useStateValue();
 
   const handleReset = () => {
-    console.log('reset');
+    dispatch({
+      type: actionTypes.RESET_TIMERS
+    })
   }
 
   const clockify = () => {
     let minutes = Math.floor(timerValue / 60);
-    let seconds = timerValue - minutes * 60;
+    let seconds = timerValue - (minutes * 60);
     minutes = minutes < 10 ? '0' + minutes : minutes;
     seconds = seconds < 10 ? '0' + seconds : seconds;
     return `${minutes}:${seconds}`;
