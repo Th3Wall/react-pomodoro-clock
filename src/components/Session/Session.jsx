@@ -6,19 +6,23 @@ import { actionTypes } from '../../reducer';
 
 const Session = () => {
 
-    const [{sessionValue}] = useStateValue();
+    const [{sessionValue, busyIndicator}] = useStateValue();
     const [state, dispatch] = useStateValue();
 
     const handleDecrement = () => {
         dispatch({
+            ...state,
             type: actionTypes.DECREASE_SESSION_VALUE,
-            sessionValue: sessionValue - 1
+            sessionValue: sessionValue - 1,
+            timerValue: (sessionValue - 1) * 60
         })
     }
     const handleIncrement = () => {
         dispatch({
+            ...state,
             type: actionTypes.INCREASE_SESSION_VALUE,
-            sessionValue: sessionValue + 1
+            sessionValue: sessionValue + 1,
+            timerValue: (sessionValue + 1) * 60
         })
     }
 
@@ -31,7 +35,7 @@ const Session = () => {
                     id='session-decrement'
                     className='session__controls--btn'
                     onClick={handleDecrement}
-                    disabled={sessionValue <= 1}
+                    disabled={busyIndicator || sessionValue <= 1}
                 >
                     <FontAwesomeIcon icon={faMinus}/>
                 </button>
@@ -41,7 +45,7 @@ const Session = () => {
                     id='session-increment'
                     className='session__controls--btn'
                     onClick={handleIncrement}
-                    disabled={sessionValue > 59}
+                    disabled={busyIndicator || sessionValue > 59}
                 >
                     <FontAwesomeIcon icon={faPlus} />
                 </button>
