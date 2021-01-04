@@ -20,6 +20,8 @@ const Controls = () => {
             ...state,
             type: actionTypes.RESET_TIMERS
         })
+        audioSoundRef.current.pause();
+        audioSoundRef.current.time = 0;
     }
 
     const handlePlayPause = () => {
@@ -37,7 +39,7 @@ const Controls = () => {
             timerValue: timerValue - 1
         })
         if (timerValue === 0) audioSoundRef.current.play();
-        else if (timerValue < 0) {
+        if (timerValue < 0) {
             if (timerLabel === 'Session') {
                 dispatch({
                     ...state,
@@ -87,7 +89,7 @@ const Controls = () => {
                     icon={faRedo}
                 />
             </button>
-            <audio id="beep" src={bellSoundUrl} ref={audioSoundRef} />
+            <audio id="beep" src={bellSoundUrl} ref={audioSoundRef} preload='auto' />
         </div>
     )
 }
