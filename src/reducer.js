@@ -11,6 +11,7 @@ export const initialState = {
 export const actionTypes = {
     SET_PROJECTNAME: 'SET_PROJECTNAME',
     RESET_TIMERS: 'RESET_TIMERS',
+    START_TIMER: 'START_TIMER',
     TOGGLE_TIMER_LABEL: 'TOGGLE_TIMER_LABEL',
     TOGGLE_ISBUSY_INDICATOR: 'TOGGLE_ISBUSY_INDICATOR',
     INCREASE_BREAK_VALUE: 'INCREASE_BREAK_VALUE',
@@ -58,6 +59,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 timerLabel: action.timerLabel
+            };
+        case actionTypes.START_TIMER:
+            return {
+                ...state,
+                timerValue: action.timerValue
             };
         case actionTypes.RESET_TIMERS:
             return initialState;
