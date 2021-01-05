@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 import { useClockify } from '../../hooks/useClockify';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay, faPause, faRedo } from '@fortawesome/free-solid-svg-icons'
-import { useStateValue } from '../../stateProvider';
+import { useStateValue } from '../../contexts/stateProvider';
 import { actionTypes } from '../../reducer';
 
 const Controls = () => {

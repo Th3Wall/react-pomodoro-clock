@@ -1,4 +1,4 @@
-import { useStateValue } from '../stateProvider';
+import { useStateValue } from '../contexts/stateProvider';
 
 export function useClockify() {
     const [{timerValue}] = useStateValue();

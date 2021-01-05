@@ -1,7 +1,7 @@
 import './session.sass'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons'
-import { useStateValue } from '../../stateProvider';
+import { useStateValue } from '../../contexts/stateProvider';
 import { actionTypes } from '../../reducer';
 
 const Session = () => {

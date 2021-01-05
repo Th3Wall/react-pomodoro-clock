@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './_variables.sass';
 import './index.sass';
 import Timer from './Timer';
-import { StateProvider } from "./stateProvider";
+import { StateProvider } from "./contexts/stateProvider";
 import reducer, { initialState } from "./reducer";
 
 ReactDOM.render(
