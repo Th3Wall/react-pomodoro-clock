@@ -1,7 +1,41 @@
+$main-font: 'Quicksand', sans-serif
+
 $white: #ffffff
 $black: #000000
 $bg-color: #282c34
+$box-shadow-color: #f133450c
+$dark-box-shadow-color: #7b757517
+$timercircle-dark-box-shadow-color: #ffffff33
 $gradient-stop-1: #F13346
 $gradient-stop-2: #FB5143
+$dark-gradient-stop-1: #232526
+$dark-gradient-stop-2: #414345
 
-$main-font: 'Quicksand', sans-serif
+root
+    --text: #{$gradient-stop-1}
+    --box-shadow-color: #{$box-shadow-color}
+    --timer-background-color: #{$white}
+    --button-background-color: #{$white}
+    --button-color: #{$gradient-stop-1}
+    --background-gradient-stop-1: #{$gradient-stop-1}
+    --background-gradient-stop-2: #{$gradient-stop-2}
+    --timercircle-dark-box-shadow-color: #{$timercircle-dark-box-shadow-color}
+
+[data-theme='light']
+    --background-gradient-stop-1: #{$gradient-stop-1}
+    --background-gradient-stop-2: #{$gradient-stop-2}
+    --timer-background-color: #{$white}
+    --button-background-color: #{$white}
+    --button-color: #{$gradient-stop-1}
+    --text: #{$gradient-stop-1}
+    --box-shadow-color: #{$box-shadow-color}
+
+[data-theme='dark']
+    --background-gradient-stop-1: #{$dark-gradient-stop-1}
+    --background-gradient-stop-2: #{$dark-gradient-stop-2}
+    --timer-background-color: #{$dark-gradient-stop-2}
+    --button-background-color: #{$dark-gradient-stop-2}
+    --button-color: #{$white}
+    --text: #{$white}
+    --box-shadow-color: #{$dark-box-shadow-color}
+    --timercircle-dark-box-shadow-color: #{$timercircle-dark-box-shadow-color}

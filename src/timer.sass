@@ -6,8 +6,8 @@
   align-items: center
   justify-content: center
   min-width: 350px
-  background-color: $white
-  color: $gradient-stop-1
+  background-color: var(--timer-background-color)
+  color: var(--text)
   padding: 2.5em 2em
   border-radius: 50px
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), -2px 17px 33.4px rgba(0, 0, 0, 0.086), 1px 7px 20px 2px rgba(0, 0, 0, 0.12)
@@ -33,7 +33,7 @@
 
     &::after
       content: ''
-      background: linear-gradient(90deg, $gradient-stop-1 0%, $gradient-stop-2 100%)
+      background: linear-gradient(90deg, var(--background-gradient-stop-1) 0%, var(--background-gradient-stop-2) 100%)
       width: 180px
       height: 180px
       border-radius: 50%
@@ -53,3 +53,9 @@
   &__maintitle
     margin-top: 0.5em
     margin-bottom: 1.5em
+
+[data-theme='dark']
+  .timer
+    &__time
+      &::after
+        box-shadow: -1px 1px 24px 2px var(--timercircle-dark-box-shadow-color)

@@ -5,11 +5,14 @@ import './index.sass';
 import Timer from './Timer';
 import { StateProvider } from "./contexts/stateProvider";
 import reducer, { initialState } from "./reducer";
+import ThemeProvider from './contexts/themeProvider';
 
 ReactDOM.render(
   <React.StrictMode>
     <StateProvider reducer={reducer} initialState={initialState}>
-      <Timer />
+      <ThemeProvider>
+        <Timer />
+      </ThemeProvider>
     </StateProvider>
   </React.StrictMode>,
   document.getElementById('root')
