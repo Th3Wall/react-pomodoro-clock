@@ -1,6 +1,51 @@
-# Getting Started with Create React App
+![Image of React Pomodoro Timer](https://i.postimg.cc/k5Zx8RSV/React-Pomodoro-Timer.png)
+# 🍅 React Pomodoro Timer
+> This is a very small project created with the purpose of learning the fundamentals of React.js starting from a simple [Create React App](https://github.com/facebook/create-react-app).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🎯 About ##
+
+I've started this project with the idea of reworking one of the ending projects of the Front End Libraries Certification (300 hours) of [FreeCodeCamp](https://www.freecodecamp.org/learn).
+I have structured the project with three React components and I have used some native and custom [React hooks](https://reactjs.org/docs/hooks-intro.html) in order to handle various project features and behaviours.<br/>
+I have also used the [Context API](https://reactjs.org/docs/context.html) in order to be able to dispatch actions and to avoid prop-drilling (or threading). I have then styled everything with a little bit of custom SASS and I have added a theme switcher in order to be able to toggle the dark mode view.<br/>
+You can set sessions and breaks for a maximum of 60 minutes: for each mode change you will hear an audio notification.<br/>
+You can even follow the counter mode & timer in your browser tab name without have the focus on that tab.
+
+### Demo
+Here's the [demo link](https://react-tomato-clock.netlify.app/).
+
+## :sparkles: Features ##
+
+:heavy_check_mark: Use of React hooks and custom hooks<br/>
+:heavy_check_mark: Use of React Context API<br/>
+:heavy_check_mark: Counter state & timer in browser tab name<br/>
+:heavy_check_mark: Audio notification when timer ends<br/>
+:heavy_check_mark: Theme switcher (light/dark mode)<br/>
+:heavy_check_mark: Responsive site
+
+## :rocket: Technologies ##
+
+- [React](https://reactjs.org/)
+- [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [React Context API](https://reactjs.org/docs/context.html)
+- [SASS with vars switcher](https://sass-lang.com/)
+- [Netlify - Responsible for the deploy (have a look below)](https://www.netlify.com/)
+
+## Netlify deploy & configuration
+
+> The site is developed with some specific https://netlify.com apis.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b7827e25-ac49-44f3-b209-68c7b31b4bd3/deploy-status)](https://app.netlify.com/sites/react-tomato-clock/deploys)
+
+### Deploy configuration steps
+
+1. Connect your GitHub account to Netlify
+3. Select the project
+2. In Settings → Build & Deploy → Set **Build command** to : **_npm run build_**
+3. In Settings → Build & Deploy → Set **Publish directory** to : **_build_**
+
+## :white_check_mark: Requirements ##
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
 
 ## Available Scripts
 
