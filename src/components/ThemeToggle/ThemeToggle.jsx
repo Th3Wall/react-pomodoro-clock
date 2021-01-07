@@ -2,11 +2,18 @@ import './themeToggle.sass'
 import { useState, useEffect } from 'react';
 
 const ThemeToggle = () => {
+
+    const getDefaultTheme = () => {
+        const selectedTheme = localStorage.getItem('theme');
+        localStorage.setItem("theme", selectedTheme || "light");
+        return selectedTheme || 'light'
+    }
+
     const [checked, setChecked] = useState(localStorage.getItem("theme") === "dark" ? true : false);
     useEffect(() => {
         document
             .getElementsByTagName("HTML")[0]
-            .setAttribute("data-theme", localStorage.getItem("theme"));
+            .setAttribute("data-theme", getDefaultTheme());
     }, []);
 
     const toggleThemeChange = () => {
