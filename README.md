@@ -20,6 +20,7 @@ Here's the [demo link](https://react-tomato-clock.netlify.app/).
 :heavy_check_mark: Counter state & timer in browser tab name<br/>
 :heavy_check_mark: Audio notification when timer ends<br/>
 :heavy_check_mark: Theme switcher (light/dark mode)<br/>
+:heavy_check_mark: Gets theme preference from local storage<br/>
 :heavy_check_mark: Responsive site
 
 ## :rocket: Technologies ##
