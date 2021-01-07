@@ -10,7 +10,7 @@ I have also used the [Context API](https://reactjs.org/docs/context.html) in ord
 You can set sessions and breaks for a maximum of 60 minutes: for each mode change you will hear an audio notification.<br/>
 You can even follow the counter mode & timer in your browser tab name without have the focus on that tab.
 
-### Demo
+### ▶️ Demo
 Here's the [demo link](https://react-tomato-clock.netlify.app/).
 
 ## :sparkles: Features ##
