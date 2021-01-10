@@ -1,5 +1,7 @@
 export const initialState = {
     projectName: 'React Pomodoro Timer',
+    githubUsername: 'Th3Wall',
+    githubProfileUrl: 'https://github.com/Th3Wall',
     timerLabel: 'Session',
     busyIndicator: false,
     breakValue: 5,
