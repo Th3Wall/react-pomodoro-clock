@@ -1,6 +1,6 @@
 ![Image of React Pomodoro Timer](https://i.postimg.cc/k5Zx8RSV/React-Pomodoro-Timer.png)
 # 🍅 React Pomodoro Timer
-> This is a very small project created with the purpose of learning the fundamentals of React.js starting from a simple [Create React App](https://github.com/facebook/create-react-app).
+> This is a very small project created with the purpose of learning the fundamentals of React.js starting from a simple [Create React App](https://github.com/facebook/create-react-app).<br/><br/>
 
 ## 🎯 About ##
 
@@ -9,9 +9,11 @@ I have structured the project with three React components and I have used some n
 I have also used the [Context API](https://reactjs.org/docs/context.html) in order to be able to dispatch actions and to avoid prop-drilling (or threading). I have then styled everything with a little bit of custom SASS and I have added a theme switcher in order to be able to toggle the dark mode view.<br/>
 You can set sessions and breaks for a maximum of 60 minutes: for each mode change you will hear an audio notification.<br/>
 You can even follow the counter mode & timer in your browser tab name without have the focus on that tab.
+<br/><br/>
 
-### ▶️ Demo
+## ▶️ Demo ##
 Here's the [demo link](https://react-tomato-clock.netlify.app/).
+<br/><br/>
 
 ## :sparkles: Features ##
 
@@ -22,6 +24,7 @@ Here's the [demo link](https://react-tomato-clock.netlify.app/).
 :heavy_check_mark: Theme switcher (light/dark mode)<br/>
 :heavy_check_mark: Gets theme preference from local storage<br/>
 :heavy_check_mark: Responsive site
+<br/><br/>
 
 ## :rocket: Technologies ##
 
@@ -30,8 +33,9 @@ Here's the [demo link](https://react-tomato-clock.netlify.app/).
 - [React Context API](https://reactjs.org/docs/context.html)
 - [SASS with vars switcher](https://sass-lang.com/)
 - [Netlify - Responsible for the deploy (have a look below)](https://www.netlify.com/)
+<br/><br/>
 
-## Netlify deploy & configuration
+## Netlify deploy & configuration ##
 
 > The site is developed with some specific https://netlify.com apis.
 
@@ -43,6 +47,7 @@ Here's the [demo link](https://react-tomato-clock.netlify.app/).
 3. Select the project
 2. In Settings → Build & Deploy → Set **Build command** to : **_npm run build_**
 3. In Settings → Build & Deploy → Set **Publish directory** to : **_build_**
+<br/><br/>
 
 ## :white_check_mark: Requirements ##
 
