@@ -38,5 +38,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "guppy": {
+    "id": "a01ae020-9210-11eb-a526-bffe0af5e401",
+    "name": "react-pomodoro-clock",
+    "type": "create-react-app",
+    "color": "#AA00FF",
+    "icon": null,
+    "createdAt": 1617188566822
   }
 }
