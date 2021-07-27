@@ -11,8 +11,11 @@ You can set sessions and breaks for a maximum of 60 minutes: for each mode chang
 You can even follow the counter mode & timer in your browser tab name without have the focus on that tab.
 <br/><br/>
 
-## ▶️ Demo ##
-Here's the [demo link](https://react-tomato-clock.netlify.app/).
+## ▶️ Demo
+
+Here you can find the demo link:
+
+- [Netlify](https://react-tomato-clock.netlify.app/)
 <br/><br/>
 
 ## :sparkles: Features ##
