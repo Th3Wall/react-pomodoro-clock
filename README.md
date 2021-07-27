@@ -18,13 +18,13 @@ Here you can find the demo link:
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Use of React hooks and custom hooks<br/>
-:heavy_check_mark: Use of React Context API<br/>
-:heavy_check_mark: Counter state & timer in browser tab name<br/>
-:heavy_check_mark: Audio notification when timer ends<br/>
-:heavy_check_mark: Theme switcher (light/dark mode)<br/>
-:heavy_check_mark: Gets theme preference from local storage<br/>
-:heavy_check_mark: Responsive site
+:heavy_check_mark:&nbsp; Use of React hooks and custom hooks<br/>
+:heavy_check_mark:&nbsp; Use of React Context API<br/>
+:heavy_check_mark:&nbsp; Counter state & timer in browser tab name<br/>
+:heavy_check_mark:&nbsp; Audio notification when timer ends<br/>
+:heavy_check_mark:&nbsp; Theme switcher (light/dark mode)<br/>
+:heavy_check_mark:&nbsp; Gets theme preference from local storage<br/>
+:heavy_check_mark:&nbsp; Responsive site
 
 ## :rocket: Technologies ##
 
