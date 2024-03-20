@@ -39,7 +39,8 @@ const Controls = () => {
             timerValue: timerValue - 1
         })
         if (timerValue === 0) audioSoundRef.current.play();
-        if (timerValue < 0) {
+        /* fix: minutes is negative */
+        if (timerValue <= 0) {
             if (timerLabel === 'Session') {
                 dispatch({
                     ...state,
